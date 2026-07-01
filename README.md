@@ -1,79 +1,231 @@
-<h1 align="center">✨ Full-Stack Interview Platform ✨</h1>
+# 💼 InterviewFlow
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+> **An Intelligent Technical Interview Platform built for modern software engineering recruitment.**
 
-✨ Highlights:
+InterviewFlow is a full-stack technical interview platform that enables organizations to conduct seamless coding interviews with integrated video conferencing, collaborative coding, screen sharing, and AI-assisted interview workflows.
 
-- 🧑‍💻 VSCode-Powered Code Editor
-- 🔐 Authentication via Clerk
-- 🎥 1-on-1 Video Interview Rooms
-- 🧭 Dashboard with Live Stats
-- 🔊 Mic & Camera Toggle, Screen Sharing & Recording
-- 💬 Real-time Chat Messaging
-- ⚙️ Secure Code Execution in Isolated Environment
-- 🎯 Auto Feedback — Success / Fail based on test cases
-- 🎉 Confetti on Success + Notifications on Fail
-- 🧩 Practice Problems Page (solo coding mode)
-- 🔒 Room Locking — allows only 2 participants
-- 🧠 Background Jobs with Inngest (async tasks)
-- 🧰 REST API with Node.js & Express
-- ⚡ Data Fetching & Caching via TanStack Query
-- 🤖 CodeRabbit for PR Analysis & Code Optimization
-- 🧑‍💻 Git & GitHub Workflow (branches, PRs, merges)
-- 🚀 Deployment on Sevalla (free-tier friendly)
+Designed to replicate real-world technical hiring, the platform combines communication, coding, and intelligent evaluation into a single collaborative workspace.
 
 ---
 
-## 🧪 .env Setup
+## 🚀 Features
 
-### Backend (`/backend`)
+### 👨‍💼 Authentication & User Management
 
-```bash
-PORT=3000
-NODE_ENV=development
+- Secure JWT Authentication
+- Role-Based Access (Interviewer / Candidate)
+- User Registration & Login
+- Protected Routes
+- Session Management
 
-DB_URL=your_mongodb_connection_url
+---
 
-INNGEST_EVENT_KEY=your_inngest_event_key
-INNGEST_SIGNING_KEY=your_inngest_signing_key
+### 📅 Interview Management
 
-STREAM_API_KEY=your_stream_api_key
-STREAM_API_SECRET=your_stream_api_secret
+- Schedule Interviews
+- Join Interview Sessions
+- Interview Dashboard
+- Interview History
+- Upcoming & Completed Interviews
 
-CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
+---
 
-CLIENT_URL=http://localhost:5173
+### 💻 Collaborative Coding
+
+- Monaco Editor Integration
+- Multi-Language Code Support
+- Custom Input
+- Code Execution
+- Syntax Highlighting
+- Real-Time Collaborative Editing
+
+---
+
+### 🎥 Video Conferencing
+
+- HD Video Calling
+- Audio Controls
+- Camera Controls
+- Participant Management
+- Low-Latency Communication
+
+---
+
+### 🖥 Screen Sharing
+
+- Full Screen Sharing
+- Browser Tab Sharing
+- Window Sharing
+- Live Screen Collaboration
+
+---
+
+### 💬 Real-Time Communication
+
+- Live Chat
+- Instant Messaging
+- Interview Notes
+- Real-Time Event Synchronization
+
+---
+
+### 🤖 AI Features
+
+- AI-Generated Technical Questions
+- Resume-Based Interview Questions
+- Automated Interview Feedback
+- Coding Performance Analysis
+- Personalized Improvement Suggestions
+
+---
+
+### 📊 Analytics Dashboard
+
+#### Interviewer
+
+- Candidate Performance
+- Interview Reports
+- Evaluation History
+- Hiring Recommendations
+
+#### Candidate
+
+- Previous Interviews
+- Coding Performance
+- AI Feedback Reports
+- Skill Improvement Tracking
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- Next.js
+- React.js
+- TypeScript
+- Tailwind CSS
+- Monaco Editor
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Socket.io
+- JWT Authentication
+- REST APIs
+
+### Real-Time Technologies
+
+- WebRTC
+- Socket.io
+
+### AI Integration
+
+- Gemini API / OpenAI API
+- Resume Parsing
+- AI Interview Assistant
+
+---
+
+## 🏗 System Architecture
+
+InterviewFlow follows a modern client-server architecture.
+
+- Frontend built with Next.js
+- REST APIs using Express.js
+- MongoDB for persistent storage
+- Socket.io for real-time communication
+- WebRTC for video conferencing
+- AI services for interview intelligence
+
+---
+
+## ⚡ Key Highlights
+
+- Secure Authentication
+- Live Coding Environment
+- Video Conferencing
+- Screen Sharing
+- AI Interview Assistant
+- Real-Time Collaboration
+- Analytics Dashboard
+- Production-Inspired Architecture
+
+---
+
+## 📂 Project Structure
+
 ```
-
-### Frontend (`/frontend`)
-
-```bash
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-
-VITE_API_URL=http://localhost:3000/api
-
-VITE_STREAM_API_KEY=your_stream_api_key
+InterviewFlow
+│
+├── client
+│   ├── components
+│   ├── pages
+│   ├── hooks
+│   ├── services
+│   └── utils
+│
+├── server
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── middleware
+│   ├── sockets
+│   └── services
+│
+└── README.md
 ```
 
 ---
 
-## 🔧 Run the Backend
+
+## 🚀 Installation
 
 ```bash
+git clone https://github.com/yourusername/interviewflow.git
 
-cd backend
+cd interviewflow
+
 npm install
+
 npm run dev
 ```
 
 ---
 
-## 🔧 Run the Frontend
+## 🌟 Future Improvements
 
-```
-bash
-cd frontend
-npm install
-npm run dev
-```
+- Live Whiteboard
+- AI Voice Analysis
+- Company Interview Templates
+- Calendar Integration
+- Coding Contest Mode
+- Multi-Round Interviews
+- Automated Proctoring
+- AI Hiring Score
+
+---
+
+## 💡 Why InterviewFlow?
+
+Most interview platforms focus only on communication.
+
+InterviewFlow bridges the gap between technical assessment and collaboration by combining live coding, video conferencing, screen sharing, and AI-assisted evaluation into a unified platform that mirrors real-world software engineering interviews.
+
+Instead of simply conducting interviews, InterviewFlow helps organizations make better hiring decisions through intelligent technical assessments.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
