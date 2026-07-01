@@ -1,105 +1,127 @@
+<div align="center">
+
 # 💼 InterviewFlow
 
-> **An Intelligent Technical Interview Platform built for modern software engineering recruitment.**
+### Intelligent Technical Interview Platform
 
-InterviewFlow is a full-stack technical interview platform that enables organizations to conduct seamless coding interviews with integrated video conferencing, collaborative coding, screen sharing, and AI-assisted interview workflows.
+Conduct real-world technical interviews with **Live Coding, Video Calling, Screen Sharing, Real-Time Collaboration, and AI-Assisted Evaluation** — all in one platform.
 
-Designed to replicate real-world technical hiring, the platform combines communication, coding, and intelligent evaluation into a single collaborative workspace.
+![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
+![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge)
+![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=for-the-badge)
+![AI Powered](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge)
+
+⭐ If you like this project, consider giving it a star!
+
+</div>
 
 ---
 
-## 🚀 Features
+# 📖 Overview
 
-### 👨‍💼 Authentication & User Management
+InterviewFlow is a modern full-stack technical interview platform built to simplify software engineering interviews.
+
+Instead of switching between multiple tools for video calls, coding assessments, communication, and evaluation, InterviewFlow brings everything together into one seamless experience.
+
+It provides interviewers with an efficient hiring workflow while helping candidates perform coding interviews in a realistic environment.
+
+---
+
+# ✨ Key Features
+
+## 🔐 Authentication & User Management
 
 - Secure JWT Authentication
-- Role-Based Access (Interviewer / Candidate)
-- User Registration & Login
+- Role-Based Access
 - Protected Routes
+- User Registration & Login
 - Session Management
 
 ---
 
-### 📅 Interview Management
+## 📅 Interview Management
 
 - Schedule Interviews
 - Join Interview Sessions
 - Interview Dashboard
+- Candidate Dashboard
 - Interview History
-- Upcoming & Completed Interviews
 
 ---
 
-### 💻 Collaborative Coding
+## 💻 Live Coding Environment
 
-- Monaco Editor Integration
-- Multi-Language Code Support
-- Custom Input
+- Monaco Code Editor
+- Multi-Language Support
+- Real-Time Collaborative Coding
 - Code Execution
 - Syntax Highlighting
-- Real-Time Collaborative Editing
+- Custom Input & Output
 
 ---
 
-### 🎥 Video Conferencing
+## 🎥 Video Conferencing
 
 - HD Video Calling
 - Audio Controls
-- Camera Controls
+- Camera Toggle
 - Participant Management
 - Low-Latency Communication
 
 ---
 
-### 🖥 Screen Sharing
+## 🖥 Screen Sharing
 
 - Full Screen Sharing
-- Browser Tab Sharing
 - Window Sharing
-- Live Screen Collaboration
+- Browser Tab Sharing
+- Live Collaboration
 
 ---
 
-### 💬 Real-Time Communication
+## 💬 Real-Time Communication
 
 - Live Chat
 - Instant Messaging
 - Interview Notes
-- Real-Time Event Synchronization
+- Socket.io Powered Events
 
 ---
 
-### 🤖 AI Features
+## 🤖 AI Features
 
 - AI-Generated Technical Questions
 - Resume-Based Interview Questions
-- Automated Interview Feedback
 - Coding Performance Analysis
+- AI Interview Feedback
 - Personalized Improvement Suggestions
 
 ---
 
-### 📊 Analytics Dashboard
+## 📊 Analytics Dashboard
 
-#### Interviewer
+### Interviewer
 
-- Candidate Performance
-- Interview Reports
-- Evaluation History
+- Candidate Reports
+- Performance Tracking
 - Hiring Recommendations
+- Interview Analytics
 
-#### Candidate
+### Candidate
 
 - Previous Interviews
 - Coding Performance
 - AI Feedback Reports
-- Skill Improvement Tracking
+- Skill Progress Tracking
 
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
-### Frontend
+## Frontend
 
 - Next.js
 - React.js
@@ -107,73 +129,68 @@ Designed to replicate real-world technical hiring, the platform combines communi
 - Tailwind CSS
 - Monaco Editor
 
-### Backend
+## Backend
 
 - Node.js
 - Express.js
 - MongoDB
-- Socket.io
-- JWT Authentication
 - REST APIs
+- JWT Authentication
 
-### Real-Time Technologies
+## Real-Time
 
-- WebRTC
 - Socket.io
+- WebRTC
 
-### AI Integration
+## AI
 
 - Gemini API / OpenAI API
-- Resume Parsing
-- AI Interview Assistant
 
 ---
 
-## 🏗 System Architecture
-
-InterviewFlow follows a modern client-server architecture.
-
-- Frontend built with Next.js
-- REST APIs using Express.js
-- MongoDB for persistent storage
-- Socket.io for real-time communication
-- WebRTC for video conferencing
-- AI services for interview intelligence
-
----
-
-## ⚡ Key Highlights
-
-- Secure Authentication
-- Live Coding Environment
-- Video Conferencing
-- Screen Sharing
-- AI Interview Assistant
-- Real-Time Collaboration
-- Analytics Dashboard
-- Production-Inspired Architecture
-
----
-
-## 📂 Project Structure
+# 🏗 Architecture
 
 ```
-InterviewFlow
+                Frontend (Next.js)
+
+                       │
+
+               REST API + Socket.io
+
+                       │
+
+              Express.js Backend
+
+          ┌──────────┴──────────┐
+
+      MongoDB              AI Services
+
+          │                     │
+
+      User Data         Interview Intelligence
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+InterviewFlow/
+
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── services/
+│   └── utils/
 │
-├── client
-│   ├── components
-│   ├── pages
-│   ├── hooks
-│   ├── services
-│   └── utils
-│
-├── server
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── middleware
-│   ├── sockets
-│   └── services
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── sockets/
+│   └── services/
 │
 └── README.md
 ```
@@ -181,12 +198,50 @@ InterviewFlow
 ---
 
 
-## 🚀 Installation
+
+# ⚙ Environment Variables
+
+## Backend (`/backend/.env`)
+
+```env
+PORT=3000
+NODE_ENV=development
+
+DB_URL=your_mongodb_connection_url
+
+JWT_SECRET=your_secret
+
+OPENAI_API_KEY=your_api_key
+
+CLIENT_URL=http://localhost:3000
+```
+
+---
+
+## Frontend (`/frontend/.env`)
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+
+NEXT_PUBLIC_SOCKET_URL=http://localhost:3000
+```
+
+---
+
+# 🚀 Installation
 
 ```bash
 git clone https://github.com/yourusername/interviewflow.git
 
 cd interviewflow
+```
+
+---
+
+# 🔧 Run Backend
+
+```bash
+cd backend
 
 npm install
 
@@ -195,37 +250,60 @@ npm run dev
 
 ---
 
-## 🌟 Future Improvements
+# 💻 Run Frontend
 
-- Live Whiteboard
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+---
+
+# 🌟 Future Improvements
+
 - AI Voice Analysis
-- Company Interview Templates
+- AI Proctoring
+- Whiteboard Collaboration
 - Calendar Integration
-- Coding Contest Mode
 - Multi-Round Interviews
-- Automated Proctoring
-- AI Hiring Score
+- Company Dashboard
+- Interview Templates
+- Coding Contest Mode
+- Automated Hiring Score
 
 ---
 
-## 💡 Why InterviewFlow?
+# 💡 Why InterviewFlow?
 
-Most interview platforms focus only on communication.
+Traditional interview platforms primarily focus on communication.
 
-InterviewFlow bridges the gap between technical assessment and collaboration by combining live coding, video conferencing, screen sharing, and AI-assisted evaluation into a unified platform that mirrors real-world software engineering interviews.
+InterviewFlow combines **coding, communication, collaboration, and AI-powered evaluation** into one integrated platform that closely replicates real-world software engineering interviews.
 
-Instead of simply conducting interviews, InterviewFlow helps organizations make better hiring decisions through intelligent technical assessments.
+Rather than simply hosting interviews, it helps organizations make **better technical hiring decisions** through intelligent assessment workflows.
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome.
+Contributions, feature requests, and pull requests are always welcome.
 
-Feel free to fork the repository and submit a pull request.
+If you have ideas to improve InterviewFlow, feel free to fork the repository and submit a PR.
 
+---
 
+# ⭐ Support
 
-## ⭐ Support
+If you found this project useful, don't forget to leave a ⭐ on GitHub.
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+It motivates further development and helps others discover the project.
+
+---
+
+<div align="center">
+
+Made with ❤️ by Mohit Kumar Yadav
+
+</div>
